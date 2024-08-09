@@ -1,12 +1,12 @@
-interface Book1 {
+interface Book {
   title: string;
   likes: number;
   accounts: string[];
   status: string;
-  details: any;
+  details?: any;
 }
 
-const page1: Book1 = {
+const page1: Book = {
   title: "The awesome page",
   likes: 100,
   accounts: ["Max", "Anton", "Nikita"],
@@ -17,14 +17,7 @@ const page1: Book1 = {
   },
 };
 
-type Book2 = {
-  title: string;
-  likes: number;
-  accounts: string[];
-  status: string;
-};
-
-const page2: Book2 = {
+const page2: Book = {
   title: "Python or Js",
   likes: 5,
   accounts: ["Alex"],
