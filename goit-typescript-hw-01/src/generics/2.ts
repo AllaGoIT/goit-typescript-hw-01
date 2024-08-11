@@ -10,7 +10,7 @@ type AllType = {
   weight: number;
 };
 
-function compare(top: AllType, bottom: AllType): AllType {
+function compare() Pick top: <AllType, "name" | "color" >  Pick bottom: <AllType,"position"|"weight">  AllType {
   return {
     name: top.name,
     color: top.color,
